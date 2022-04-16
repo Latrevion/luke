@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>gradientFont</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    div{
+      margin-top:50vh;
+      transform:translatey(-50%);
+      /*   border:1px solid red; */
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .text-clip{
+      text-align:center;
+      width:45vw;
+      color:transparent;
+      font-size: 26px;
+      font-weight: bold;
+      background: linear-gradient(45deg, rgba(21, 69, 153, 1)
+      30%, rgba(145, 128, 129, 1)80%,rgba(145, 128, 129, .2)
+      90%);
+      /*   渐变文字的关键  */
+      -webkit-background-clip: text;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <p class="text-clip">勿言城东陌，便是江南路。</p>
+
+  <p class="text-clip">扬鞭簇车马，挥手辞亲故。</p>
+
+  <p class="text-clip">我生本无乡，心安是归处。</p>
+
+  <p class="text-clip">——白居易《初出城留别》</p>
+
+</div>
+</body>
+</html>
